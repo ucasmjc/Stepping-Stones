@@ -1,15 +1,17 @@
 # 💬Stepping-Stones
 Audio-Visual Segmentation (AVS) aims to achieve pixel-level localization of sound sources in videos, while Audio-Visual Semantic Segmentation (AVSS), as an extension of AVS, further pursues semantic understanding of audio-visual scenes. However, since the AVSS task requires the establishment of audio-visual correspondence and semantic understanding simultaneously, we observe that previous methods have struggled to handle this mashup of objectives in end-to-end training, resulting in insufficient learning and sub-optimization. Therefore, we propose a two-stage training strategy called Stepping Stones, which decomposes the AVSS task into two simple subtasks from localization to semantic understanding, which are fully optimized in each stage to achieve step-by-step global optimization. This training strategy has also proved its generalization and effectiveness on existing methods. To further improve the performance of AVS tasks, we propose a novel framework Adaptive Audio Visual Segmentation, in which we incorporate an adaptive audio query generator and integrate masked attention into the transformer decoder, facilitating the adaptive fusion of visual and audio features.  Extensive experiments demonstrate that our methods achieve state-of-the-art results on all three AVS benchmarks. 
 
-<img width="1009" alt="image" src="image/teaser.png">
+<img width="1009" alt="image" src="teaser.png">
 
 ## 📰 News
-- (2024.04.11) update README.
+- (2024.4.16) Upload the main code.
+- (2024.04.11) Upload README.
 - (2024.03.07) The paper "Stepping Stones: A Progressive Training Strategy for Audio-Visual Semantic Segmentation" is submitted to ECCV 2024.
 
 ## ✊ Todo
 - [x] Upload README.
-- [ ] Upload the code and checkpoints.
+- [x] Upload the code.
+- [ ] Upload checkpoints.
 - [ ] Update the README and introduce the implementation details. 
 
 
@@ -37,26 +39,18 @@ Audio-Visual Segmentation (AVS) aims to achieve pixel-level localization of soun
 ### Quantitative comparision
 
 Single Sound Source Segmentation(S4): 
-<img width="1009" alt="image" src="image/s4.png">
+<img width="1009" alt="image" src="s4.png">
 
 Multiple Sound Source Segmentation(MS3):
-<img width="1009" alt="image" src="image/ms3.png">
+<img width="1009" alt="image" src="ms3.png">
 
 Audio-Visual Semantic Segmentation(AVSS):
-<img width="1009" alt="image" src="image/v2.png">
+<img width="1009" alt="image" src="v2.png">
 
 ### Generalization of Stepping Stones training strategy
-| Method       | Origin mIoU | Origin F-score | w/.SS (*high*) mIoU | w/.SS (*high*) F-score | w/.SS (*oracle*) mIoU | w/.SS (*oracle*) F-score |
-|--------------|-------------|----------------------|---------------------|------------------------|-----------------------|--------------------------|
-| AVSBench | 29.77| 35.2 | 31.48| 34.89| 36.35 | 39.01     |
-| AVSegformer| 36.66       | 42.0           | 39.44   | 42.49 | 46.27    | 48.04         |
->  *high* and *oracle* corresponded to three levels of mIoU values of the first stage results.
+| \multirow{2}{*}{Method}       | \multicolumn{2}{c}{Origin} | \multicolumn{2}{c}{w/.SS (low)} | \multicolumn{2}{c}{w/.SS (high)} | \multicolumn{2}{c}{w/.SS (oracle)} |
+|-------------------------------|----------------------------|---------------------------------|----------------------------------|------------------------------------|
+|                               | mIoU                       | F-score                         | mIoU                             | F-score                            | mIoU  | F-score | mIoU  | F-score |
+| AVSBench\cite{avsbench}       | 29.77                      | 35.2                            | 27.29                            | 29.85                              | 31.48 | 34.89   | 36.35 | 39.01   |
+| AVSegformer\cite{avsegformer} | 36.66                      | 42.0                            | 35.43                            | 39.04                              | 39.44 | 42.49   | 46.27 | 48.04   |
 
-AVSBench:
-<img width="1009" alt="image" src="image/avsbench.png">
-
-AVSegformer:
-<img width="1009" alt="image" src="image/avseg.png">
-
-## 🛠️ Get Started
-To be done.
