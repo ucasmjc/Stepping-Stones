@@ -48,9 +48,13 @@ Audio-Visual Semantic Segmentation(AVSS):
 <img width="1009" alt="image" src="image/v2.png">
 
 ### Generalization of Stepping Stones training strategy
-| \multirow{2}{*}{Method}       | \multicolumn{2}{c}{Origin} | \multicolumn{2}{c}{w/.SS (low)} | \multicolumn{2}{c}{w/.SS (high)} | \multicolumn{2}{c}{w/.SS (oracle)} |
-|-------------------------------|----------------------------|---------------------------------|----------------------------------|------------------------------------|
-|                               | mIoU                       | F-score                         | mIoU                             | F-score                            | mIoU  | F-score | mIoU  | F-score |
-| AVSBench\cite{avsbench}       | 29.77                      | 35.2                            | 27.29                            | 29.85                              | 31.48 | 34.89   | 36.35 | 39.01   |
-| AVSegformer\cite{avsegformer} | 36.66                      | 42.0                            | 35.43                            | 39.04                              | 39.44 | 42.49   | 46.27 | 48.04   |
+| Method       | Origin mIoU | Origin F-score | w/.SS (*high*) mIoU | w/.SS (*high*) F-score | w/.SS (*oracle*) mIoU | w/.SS (*oracle*) F-score |
+|--------------|-------------|----------------------|---------------------|------------------------|-----------------------|--------------------------|
+| AVSBench | 29.77| 35.2 | 31.48| 34.89| 36.35 | 39.01     |
+| AVSegformer| 36.66       | 42.0           | 39.44   | 42.49 | 46.27    | 48.04         |
+>  *high* and *oracle* corresponded to three levels of mIoU values of the first stage results.
+AVSBench:
+<img width="1009" alt="image" src="image/avsbench.png">
 
+AVSegformer:
+<img width="1009" alt="image" src="image/avseg.png">
