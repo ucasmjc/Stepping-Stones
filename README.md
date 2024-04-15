@@ -1,7 +1,7 @@
 # 💬Stepping-Stones
 Audio-Visual Segmentation (AVS) aims to achieve pixel-level localization of sound sources in videos, while Audio-Visual Semantic Segmentation (AVSS), as an extension of AVS, further pursues semantic understanding of audio-visual scenes. However, since the AVSS task requires the establishment of audio-visual correspondence and semantic understanding simultaneously, we observe that previous methods have struggled to handle this mashup of objectives in end-to-end training, resulting in insufficient learning and sub-optimization. Therefore, we propose a two-stage training strategy called Stepping Stones, which decomposes the AVSS task into two simple subtasks from localization to semantic understanding, which are fully optimized in each stage to achieve step-by-step global optimization. This training strategy has also proved its generalization and effectiveness on existing methods. To further improve the performance of AVS tasks, we propose a novel framework Adaptive Audio Visual Segmentation, in which we incorporate an adaptive audio query generator and integrate masked attention into the transformer decoder, facilitating the adaptive fusion of visual and audio features.  Extensive experiments demonstrate that our methods achieve state-of-the-art results on all three AVS benchmarks. 
 
-<img width="1009" alt="image" src="teaser.png">
+<img width="1009" alt="image" src="image/teaser.png">
 
 ## 📰 News
 - (2024.4.16) Upload the main code.
@@ -39,13 +39,13 @@ Audio-Visual Segmentation (AVS) aims to achieve pixel-level localization of soun
 ### Quantitative comparision
 
 Single Sound Source Segmentation(S4): 
-<img width="1009" alt="image" src="s4.png">
+<img width="1009" alt="image" src="image/s4.png">
 
 Multiple Sound Source Segmentation(MS3):
-<img width="1009" alt="image" src="ms3.png">
+<img width="1009" alt="image" src="image/ms3.png">
 
 Audio-Visual Semantic Segmentation(AVSS):
-<img width="1009" alt="image" src="v2.png">
+<img width="1009" alt="image" src="image/v2.png">
 
 ### Generalization of Stepping Stones training strategy
 | \multirow{2}{*}{Method}       | \multicolumn{2}{c}{Origin} | \multicolumn{2}{c}{w/.SS (low)} | \multicolumn{2}{c}{w/.SS (high)} | \multicolumn{2}{c}{w/.SS (oracle)} |
