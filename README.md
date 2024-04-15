@@ -53,6 +53,7 @@ Audio-Visual Semantic Segmentation(AVSS):
 | AVSBench | 29.77| 35.2 | 31.48| 34.89| 36.35 | 39.01     |
 | AVSegformer| 36.66       | 42.0           | 39.44   | 42.49 | 46.27    | 48.04         |
 >  *high* and *oracle* corresponded to three levels of mIoU values of the first stage results.
+
 AVSBench:
 <img width="1009" alt="image" src="image/avsbench.png">
 
