@@ -33,7 +33,7 @@ Audio-Visual Segmentation (AVS) aims to achieve pixel-level localization of soun
 | GAVS              | 80.06 | 90.2     | 63.70 | 77.4     | -     | -        | AAAI'2024 |
 | MUTR              | 81.5  | 89.8     | 65.0  | 73.0     | -     | -        | AAAI'2024 |
 |**AAVS(Ours)**        | **83.18** | **91.33** | **67.30** | **77.63** | 41.28 | 46.33    | -         |
-|**AAVS$^*$(Ours)**   | -     | -        | -     | -        | **48.50** | **53.20** | -         |
+|**AAVS**$^*$**(Ours)**  | -     | -        | -     | -        | **48.50** | **53.20** | -         |
 
 >  $^∗$ indicates that the model uses the Stepping Stones strategy.
 ### Quantitative comparision
