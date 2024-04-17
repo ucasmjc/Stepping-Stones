@@ -6,7 +6,6 @@ Audio-Visual Segmentation (AVS) aims to achieve pixel-level localization of soun
 ## 📰 News
 - (2024.4.16) Upload the main code.
 - (2024.04.11) Upload README.
-- (2024.03.07) The paper "Stepping Stones: A Progressive Training Strategy for Audio-Visual Semantic Segmentation" is submitted to ECCV 2024.
 
 ## ✊ Todo
 - [x] Upload README.
