@@ -4,7 +4,7 @@ Audio-Visual Segmentation (AVS) aims to achieve pixel-level localization of soun
 <img width="1009" alt="image" src="image/teaser.png">
 
 ## 📰 News
-- (2024.4.16) Upload the main code.
+- (2024.04.16) Upload the main code.
 - (2024.04.11) Upload README.
 
 ## ✊ Todo
